@@ -61,13 +61,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Starter.cs" />
-    <Compile Include="Assets\HeartController.cs" />
-    <Compile Include="Assets\TicTacToeGame.cs" />
-    <Compile Include="Assets\InventorySystem.cs" />
-    <Compile Include="Assets\RobotDialog.cs" />
+    <Compile Include="Assets\Scripts\RabbitController.cs" />
+    <Compile Include="Assets\Scripts\HeartController.cs" />
+    <Compile Include="Assets\Scripts\TicTacToeGame.cs" />
+    <Compile Include="Assets\Scripts\Starter.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\RabbitController.cs" />
+    <Compile Include="Assets\Scripts\InventorySystem.cs" />
+    <Compile Include="Assets\Scripts\RobotDialog.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
