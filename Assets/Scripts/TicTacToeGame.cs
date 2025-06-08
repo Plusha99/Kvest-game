@@ -41,7 +41,6 @@ public class TicTacToeGame : MonoBehaviour
 
     public void OnCellClicked(int cellIndex)
     {
-        Debug.Log($"gameActive: {gameActive}, cell {cellIndex} value: {board[cellIndex]}, isPlayerTurn: {isPlayerTurn}");
         if (!gameActive || board[cellIndex] != 0 || !isPlayerTurn)
             return;
 

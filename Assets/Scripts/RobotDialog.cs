@@ -28,6 +28,8 @@ public class RobotDialog : MonoBehaviour, IPointerClickHandler
     [Header("UI References")]
     public GameObject dialogPanel;
     public Text dialogText;
+    public GameObject arrowObject;
+    public float arrowShowDelay = 1f;
 
     [Header("Game References")]
     public GameObject gameBackground;
@@ -142,7 +144,12 @@ public class RobotDialog : MonoBehaviour, IPointerClickHandler
             gameCompleted = true;
             if (inventorySystem != null)
             {
-                inventorySystem.AddItem(codeDigit.ToString());
+                inventorySystem.SetItemVisible(0, true);
+            }
+
+            if (arrowObject != null)
+            {
+                StartCoroutine(ShowArrowAfterDelay());
             }
         }
         else
@@ -157,6 +164,12 @@ public class RobotDialog : MonoBehaviour, IPointerClickHandler
         yield return new WaitForSeconds(0.1f);
         gameBackground.SetActive(true);
         ticTacToeGame.StartGame();
+    }
+
+    IEnumerator ShowArrowAfterDelay()
+    {
+        yield return new WaitForSeconds(arrowShowDelay);
+        arrowObject.SetActive(true);
     }
 
     private void Reset()

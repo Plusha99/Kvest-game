@@ -61,13 +61,23 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\InteractiveDog.cs" />
+    <Compile Include="Assets\Scripts\RiddleSystem.cs" />
+    <Compile Include="Assets\Scripts\Clock.cs" />
     <Compile Include="Assets\Scripts\RabbitController.cs" />
     <Compile Include="Assets\Scripts\HeartController.cs" />
+    <Compile Include="Assets\Scripts\DuckController.cs" />
+    <Compile Include="Assets\Scripts\NextSceneArrow.cs" />
     <Compile Include="Assets\Scripts\TicTacToeGame.cs" />
     <Compile Include="Assets\Scripts\Starter.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\LanternToggle.cs" />
+    <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\Scripts\InventorySystem.cs" />
+    <Compile Include="Assets\Scripts\InventoryItem.cs" />
+    <Compile Include="Assets\Scripts\DuckHuntGame.cs" />
     <Compile Include="Assets\Scripts\RobotDialog.cs" />
+    <Compile Include="Assets\Scripts\LockController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
